@@ -1,0 +1,21 @@
+/* Home.module.css */
+.tableContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+  }
+  
+  .tableWrapper {
+    max-width: 80%;
+    max-height: 60vh;
+  }
+  
+  .tableHeader {
+    background-color: green;
+    color: white;
+  }
+  
+  .table {
+    min-width: 600px;
+  }
