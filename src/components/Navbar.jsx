@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div>
         <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" style={{ backgroundColor: 'olive' }}>
         <Toolbar>
           <IconButton
             size="large"
@@ -22,8 +22,12 @@ const Navbar = () => {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             E M P - D A S H
           </Typography>
-          <Button ><Link to={'/'} style={{color:"white"}}>Home</Link></Button>
-          <Button ><Link to={'/employee'} style={{color:"white"}}>Employee</Link></Button>
+          <Button className="nav-button" style={{ transition: 'background-color 0.3s ease', padding: '8px 16px' }}>
+              <Link to={'/'} style={{ color: "white", textDecoration: 'none' }}>Home</Link>
+            </Button>
+            <Button className="nav-button" style={{ transition: 'background-color 0.3s ease', padding: '8px 16px' }}>
+              <Link to={'/employee'} style={{ color: "white", textDecoration: 'none' }}>Employee</Link>
+            </Button>
         </Toolbar>
       </AppBar>
     </Box>

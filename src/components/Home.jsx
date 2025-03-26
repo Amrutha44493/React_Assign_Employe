@@ -1,14 +1,13 @@
-// Home.jsx
 import { Table, TableBody, TableContainer, TableHead, TableRow } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { styled } from '@mui/material/styles';
 import TableCell, { tableCellClasses } from '@mui/material/TableCell';
-import './Home.css'; // Import the CSS module
+import './Home.css'; 
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
-    backgroundColor: 'green', // Apply green background here
+    backgroundColor: 'grey',
     color: theme.palette.common.white,
   },
   [`&.${tableCellClasses.body}`]: {
@@ -35,7 +34,7 @@ const Home = () => {
         setData(res.data);
       })
       .catch((error) => {
-        console.error("Error fetching users:", error);
+        console.error("Error fetching data:", error);
       });
   }, []);
   return (

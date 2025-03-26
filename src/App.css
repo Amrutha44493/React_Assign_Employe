@@ -38,3 +38,6 @@
 .read-the-docs {
   color: #888;
 }
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Lighten on hover */
+}

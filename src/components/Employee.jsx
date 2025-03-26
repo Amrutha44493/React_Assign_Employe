@@ -2,8 +2,8 @@ import React from 'react'
 import { Box, Button, TextField, Typography } from '@mui/material'
 const Employee = () => {
   return (
-    <div>
-            <Box className="box" sx={{ width: 500, maxWidth: '100%' }}>
+<div className="form-container">   
+             <Box className="box" sx={{ width: 500, maxWidth: '100%' }}>
                 <Typography variant="h5">Employee Form</Typography>
                 <TextField
                     fullWidth
