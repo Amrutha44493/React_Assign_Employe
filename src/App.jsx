@@ -9,13 +9,18 @@ function App() {
 
   return (
     <>
-<Navbar/>
-  <Routes>
-    <Route path='/' element={<Home/>}> </Route>
-    <Route path='/employee' element={<Employee/>}> </Route>
-  </Routes>   
+    <BrowserRouter basename="/React_Assign_Employe">
+      <Routes>
+        <Route index element={<Home />} />
+        
+        <Route path="home" element={<Home />} />
+        <Route path="employee" element={<Employee />} />
+      </Routes>
+    </BrowserRouter>  
    </>
   )
 }
 
-export default App
+
+
+export default App;
